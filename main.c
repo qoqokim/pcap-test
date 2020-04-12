@@ -143,7 +143,7 @@ int main(int argc, char* argv[])  {
 
                 if ((tlen -(hlen+tcplen)*4) > 0) { //tlen-hlen-tcplen
                     printf("payload : ");
-                    for (i=0;i<16;i++){
+                    for (i=0;i<16 && i<tlen-(hlen+tcplen)*4;i++){
                         printf("%02x ",packet[i]);
                     }
                     printf("\n");
