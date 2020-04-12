@@ -148,14 +148,7 @@ int main(int argc, char* argv[])  {
                     }
                     printf("\n");
                 }
-            }
-            else if (p == IPPROTO_UDP) {  // 17 = UDP (0x11)
-                printf("< UDP > \n");
-
-            }
-            else if (p == IPPROTO_ICMP){  // 1 = ICMP
-                printf("< ICMP >\n");
-            }
+            }       
             else
                 printf("\n");
 
